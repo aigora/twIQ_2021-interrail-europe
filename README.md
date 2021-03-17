@@ -4,9 +4,9 @@
 
 ## Integrantes del equipo
 
--Andrea Blas Murillo.
--Alonso Sanchez Garcia.
--Marina Rodriguez Martinez.
+- Andrea Blas Murillo.
+- Alonso Sanchez Garcia.
+- Marina Rodriguez Martinez.
 
 
 ## Objetivos del trabajo

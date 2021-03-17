@@ -1,6 +1,6 @@
-# [Interrail europe]
+# [AVEU]
+Aplicacion para buscar billetes de tren para las distintas ciudades europeas, atendiendo a las necesidades del pasajero
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
 
 ## Integrantes del equipo
 

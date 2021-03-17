@@ -4,7 +4,10 @@
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+Andrea Blas Murillo.
+Alonso Sanchez Garcia.
+Marina Rodriguez Martinez.
+
 
 ## Objetivos del trabajo
 

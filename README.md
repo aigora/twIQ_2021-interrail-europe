@@ -11,4 +11,9 @@ Aplicacion para buscar billetes de tren por las distintas ciudades europeas, ate
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+- Venta de billetes de trenes.
+- Registro de usuario.
+- Eleccion del destino y fecha.
+- El pasajero debera decidir si queire facturar o no el equipaje.
+- Eleccion del tipo de tarifa.
+

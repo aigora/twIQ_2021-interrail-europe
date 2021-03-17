@@ -1,5 +1,5 @@
 # [AVEU]
-Aplicacion para buscar billetes de tren para las distintas ciudades europeas, atendiendo a las necesidades del pasajero
+Aplicacion para buscar billetes de tren por las distintas ciudades europeas, atendiendo ciertas necesidades del pasajero como pueden ser la hora, la ciudad o la clase en la que desea viajar. Incluyendo distintos tipos de tarifas.
 
 
 ## Integrantes del equipo

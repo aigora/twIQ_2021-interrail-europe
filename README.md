@@ -4,9 +4,9 @@ Aplicacion para buscar billetes de tren por las distintas ciudades europeas, ate
 
 ## Integrantes del equipo
 
-- Andrea Blas Murillo. a.blasm@alumnos.upm.es
-- Alonso Sanchez Garcia.
-- Marina Rodriguez Martinez. marina.rmartinez@alumnos.upm.es
+- Andrea Blas Murillo. a.blasm
+- Alonso Sanchez Garcia. alonso.sgarcia
+- Marina Rodriguez Martinez. marina.rmartinez
 
 
 ## Objetivos del trabajo

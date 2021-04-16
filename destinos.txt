@@ -1,0 +1,20 @@
+1. Barcelona (Espania): Estacion de Sants
+2. Madrid (Espania): Estacion de Atocha 
+3. Valencia (Espania): Estacion del Norte
+4. Sevilla (Espania): Santa Justa
+5. Zaragoza (Espania): Delicias
+6. Malaga (Espania): Maria Zambrano
+7. Paris (Francia):
+8. Lyon (Francia):
+9. Bruselas (Belgica):
+10. Milan (Italia):
+11. Roma (Italia):
+12. Florencia (Italia):
+13. Berlin (Alemania):
+14. Frankurt (Alemania):
+15. Colonia (Alemania):
+16. Amsterdam (Paises Bajos):
+17. Londres (Reino Unido):
+18. Oslo (Noruega): 
+19. Varsovia (Polonia):
+20.Zagreb (Croacia):

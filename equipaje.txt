@@ -1,0 +1,5 @@
+Precio del equipaje:
+Menor que 5 Kg: gratis
+Entre 5kg y 9 Kg: 10 euros
+Entre 9 Kg y 15 Kg: 20 euros
+Entre 15 Kg y 25 Kg: 30 euros

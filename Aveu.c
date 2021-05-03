@@ -2,6 +2,8 @@
 #include<string.h>
 
 int horarioManiana();
+int horarioTarde();
+int horarioNoche();
 
 int main(){
    
@@ -61,8 +63,13 @@ int main(){
 		system("cls");
 		printf("Introduzca la ciudad de origen:");
 		scanf("%s",origen);
+		do{
 		printf("Introduzca el numero de billetes que deseas comprar:");
 		scanf("%d",&nbilletes);
+		if(nbilletes>7){
+			printf("No se pueden comprar mas de 6 billetes en una misma compra.\n");
+		}
+	}while(nbilletes>7);
 		printf("Introduzca el destino:");
 		scanf("%s",destino1);
 		
@@ -143,14 +150,89 @@ int main(){
 
 	
 	do{
-	printf("Introduzca su horario para el tren de la ida\n");
+	printf("\nIntroduzca su horario para el tren de la ida\n");
 	printf("1-Horario de maniana\n");
  	printf("2-Horario de tarde\n");
  	printf("3-Horario de noche\n");
  
  	scanf("%d",&opcion2);
  	printf("Usted ha elegido la opcion %d\n",opcion2);
-	}while(opcion2<1 ||opcion2>3);
+	}while(opcion2<0 || opcion2>3);
+	
+	switch(opcion2){
+		do{
+			case 1:printf("Escoja su tren de por la maniana");
+			hora=horarioManiana();
+			if(hora==1){
+				precio+=(5*nbilletes);
+				printf("Usted has elegido el tren de las 7:30 de la maniana.\n");
+				printf("Precio del billete actualmente %.2f\n.",precio);
+			}
+			else if(hora==2){
+				printf("Usted has elegido el tren de las 10:30 de la maniana");
+				precio+=(5*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else if(hora==3){
+				printf("Usted has elegido el tren de las 12:30 de la maniana");
+				precio+=(8*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else{
+				printf("\nOpcion no disponible.");
+			}
+			
+		}while(hora<0 || hora>3);
+		break;
+		
+		do{
+		case 2:printf("Escoja su tren de por la tarde");
+		hora=horarioTarde();
+		if(hora==1){
+			precio+=(5*nbilletes);
+			printf("Usted has elegido el tren de las 15:30 de la tarde.\n");
+			printf("Precio del billete actualmente %.2f\n.",precio);	
+		}
+		else if(hora==2){
+				printf("Usted has elegido el tren de las 17:15 de la tarde.\n");
+				precio+=(10*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else if(hora==3){
+				printf("Usted has elegido el tren de las 19:15 de la tarde.\n");
+				precio+=(10*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else{
+				printf("\nOpcion no disponible.");
+			}
+		}while(hora<0 || hora>3);
+		break;
+		
+		do{
+		case 3:printf("Escoja su tren de por la noche.\n");
+		hora=horarioTarde();
+		if(hora==1){
+			precio+=(10*nbilletes);
+			printf("Usted has elegido el tren de las 11:30 de la noche.\n");
+			printf("Precio del billete actualmente %.2f\n.",precio);	
+		}
+		else if(hora==2){
+				printf("Usted has elegido el tren de las 2:30 de la noche.\n");
+				precio+=(15*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else if(hora==3){
+				printf("Usted has elegido el tren de las 5:30 de la noche.\n");
+				precio+=(15*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else{
+				printf("\nOpcion no disponible.");
+			}
+		}while(hora<0 || hora>3);
+		break;
+	}
 	
 	break;
 	case 4:
@@ -246,24 +328,83 @@ int main(){
  
  	scanf("%d",&opcion2);
  	printf("Usted ha elegido la opcion %d\n",opcion2);
-	}while(opcion2>0 && opcion2<=3);
-	break;
-	switch(opcion3){
+	}while(opcion2<0 || opcion2>3);
+	
+	switch(opcion2){
 		do{
-			case 1:
-				printf("Escoja la hora del vuelo de por la manania");
-				if(hora==1){
-					printf("Has elegido el vuelo de las 7:30 de la manania");
-				}
-				else if(hora==2){
-					printf("Has elegido el vuelo de las 10:30");
-				}
-				else if(hora==3){
-					printf("Has elegido el vuelo de las 12:30");
-				}
-				break;
-		}while(hora>1 && hora<=3);
+			case 1:printf("Escoja su tren de por la maniana");
+			hora=horarioManiana();
+			if(hora==1){
+				precio+=(5*nbilletes);
+				printf("Usted has elegido el tren de las 7:30 de la maniana.\n");
+				printf("Precio del billete actualmente %.2f\n.",precio);
+			}
+			else if(hora==2){
+				printf("Usted has elegido el tren de las 10:30 de la maniana");
+				precio+=(5*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else if(hora==3){
+				printf("Usted has elegido el tren de las 12:30 de la maniana");
+				precio+=(8*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else{
+				printf("\nOpcion no disponible.");
+			}
+			
+		}while(hora<0 || hora>3);
+		break;
+		
+		do{
+		case 2:printf("Escoja su tren de por la tarde");
+		hora=horarioTarde();
+		if(hora==1){
+			precio+=(5*nbilletes);
+			printf("Usted has elegido el tren de las 15:30 de la tarde.\n");
+			printf("Precio del billete actualmente %.2f\n.",precio);	
+		}
+		else if(hora==2){
+				printf("Usted has elegido el tren de las 17:15 de la tarde.\n");
+				precio+=(10*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else if(hora==3){
+				printf("Usted has elegido el tren de las 19:15 de la tarde.\n");
+				precio+=(10*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else{
+				printf("\nOpcion no disponible.");
+			}
+		}while(hora<0 || hora>3);
+		break;
+		
+		do{
+		case 3:printf("Escoja su tren de por la noche.\n");
+		hora=horarioTarde();
+		if(hora==1){
+			precio+=(10*nbilletes);
+			printf("Usted has elegido el tren de las 11:30 de la noche.\n");
+			printf("Precio del billete actualmente %.2f\n.",precio);	
+		}
+		else if(hora==2){
+				printf("Usted has elegido el tren de las 2:30 de la noche.\n");
+				precio+=(15*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else if(hora==3){
+				printf("Usted has elegido el tren de las 5:30 de la noche.\n");
+				precio+=(15*nbilletes);
+				printf("Precio del billete actualmente %.2f\n",precio);
+			}
+			else{
+				printf("\nOpcion no disponible.");
+			}
+		}while(hora<0 || hora>3);
+		break;
 	}
+	break;
 	case 5:
 		system("cls");
 		pfichero2=fopen("equipaje.txt","r");
@@ -309,8 +450,25 @@ int main(){
 }
 int horarioManiana(){
 	int hora;
-	printf("1- 7:30");
-	printf("2- 10:30 ");
-	printf("3- 12:30");
-	
+	printf("\n1- 7:30\n");
+	printf("2- 10:30\n");
+	printf("3- 12:30\n");
+	scanf("%d",&hora);
+	return hora;
+}
+int horarioTarde(){
+	int hora;
+	printf("\n1- 15:30\n");
+	printf("2- 17:15\n");
+	printf("3- 19:15\n");
+	scanf("%d",&hora);
+	return hora;
+}
+int horarioNoche(){
+	int hora;
+	printf("\n1- 11:30\n");
+	printf("2- 2:30\n");
+	printf("3- 5:30\n");
+	scanf("%d",&hora);
+	return hora;
 }

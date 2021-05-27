@@ -17,5 +17,5 @@ Aplicacion para buscar billetes de tren por las distintas ciudades europeas, ate
 - El pasajero debera decidir si quiere facturar o no el equipaje.
 - Eleccion del tipo de tarifa.
 - Tipo de asiento.
-- 
+
 

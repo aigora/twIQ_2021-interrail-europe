@@ -14,6 +14,8 @@ Aplicacion para buscar billetes de tren por las distintas ciudades europeas, ate
 - Venta de billetes de trenes.
 - Registro de usuario.
 - Eleccion del destino y fecha.
-- El pasajero debera decidir si queire facturar o no el equipaje.
+- El pasajero debera decidir si quiere facturar o no el equipaje.
 - Eleccion del tipo de tarifa.
+- Tipo de asiento.
+- 
 
